@@ -9,6 +9,7 @@ def verifica_alternado_em_par(valor_a_verificar):
     return False
 
 def verifica_cep_valido(cep):
+    cep = str(cep)
     resultado = re.match(expressao_regular, cep)
     if resultado and not verifica_alternado_em_par(cep):
         return True
