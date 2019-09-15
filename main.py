@@ -1,5 +1,5 @@
 import re
-expressao_regular = '^[1-9][\d+]{5}$'
+expressao_regular = r'^[1-9][\d+]{5}$'
 
 def verifica_alternado_em_par(valor_a_verificar):
     for num, f in enumerate(valor_a_verificar):
