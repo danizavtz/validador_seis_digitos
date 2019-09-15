@@ -14,3 +14,12 @@ def verifica_cep_valido(cep):
     if resultado and not verifica_alternado_em_par(cep):
         return True
     return False
+
+def main():
+    cep_a_validar = input('Digite o número do cep: ')
+    if verifica_cep_valido(cep_a_validar):
+        return print('Cep válido')
+    return print('Cep inválido')
+
+if __name__ == '__main__':
+    main()
